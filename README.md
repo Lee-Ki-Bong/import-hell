@@ -46,7 +46,7 @@ export class DogService {
 
 ```javascript
 @Module({
-  imports: [DogModule],
+  imports: [DogModule], // 공통 모듈
   controllers: [BorderCollieController],
   providers: [BorderCollieService],
 })
@@ -75,7 +75,7 @@ export class BorderCollieController {
 
 ```javascript
 @Module({
-  imports: [DogModule],
+  imports: [DogModule], // 공통 모듈
   controllers: [MalteseController],
   providers: [MalteseService],
 })
