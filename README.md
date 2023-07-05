@@ -200,5 +200,21 @@ export class MixedDogController {
   - 혼합견서비스든 혼합견컨트롤러에서든 등록한 프로바이더들을 의존성 주입하여 모듈내에서 어디든 사용할 수 있다는 뜻이다.
 
 - **[주의]**
+
   - 불필요한 복잡성을 증가시키지 않기 위해 동적 모듈은 필요한 경우에만 사용해야한다.
   - 복잡성증가, 성능저하, 디버깅과 유지보수 어려움을 초래한다.
+
+## **[TMI]**
+
+- 믹스견모듈 처럼 어떤 프로바인더가 들어와도 무방한 코드는 확장성에서 좋을지 모르나, 그 의존성이 명확하지 못하다.
+- 예를들어 고양이모듈이 들어오게 되면 더이상 강아지가 아니게 되는 것과 같이 끔찍한 혼종 모듈이 탄생할 수 있기 때문이다.
+
+- 와 같이 이 모듈에 의존성을 명확히 하는 것이 권장사항이다.
+
+```javascript
+static forRoot(
+  dogService:DogService,
+  malteseService:MalteseService,
+  borderCollieService:BorderCollieService
+) {}
+```
