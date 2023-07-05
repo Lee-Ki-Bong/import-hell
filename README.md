@@ -157,7 +157,7 @@ export class MixedDogModule {
 ```javascript
 @Module({
   imports: [
-    MixedDogModule.forRoot([DogService, MalteseService, BorderCollieService]),
+    MixedDogModule.forRoot([DogService, MalteseService, BorderCollieService]), // 주입
   ],
   providers: [],
 })
