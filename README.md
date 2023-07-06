@@ -25,7 +25,7 @@ export class BorderCollieModule {}
 - 코드 중복을 최소화하고 모듈 간의 의존성을 명확하게 관리
 - Tree 구조의 모듈이라고 생각하면 되겠다.
 - DDD에서 말하는 공통된 "아규먼트(Argument)"를 찾아 모델화하여 그 모델을 공통 모듈로 만들어 공유한다. 즉, 설계를 잘하자.
-
+- 이 예시에선 공통된 기능인 '짖다' 의 기능을 가진 공통모듈을 생성했다.
 ```javascript
 @Module({
   providers: [DogService],
