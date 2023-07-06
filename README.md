@@ -131,7 +131,8 @@ export class MalteseService {
 - 즉, 상황에 따라 동적으로 외부 프로바이더들을 사용해야할 경우이다.
 - 필요할때마다 모듈을 전부 import 시켜사용한다면, import 지옥이 펼쳐질 것이다.
 - 이럴때 동적모듈을 사용해야할 시점이다.
-
+  
+- 믹스견 동적모듈 구조
 ```javascript
 @Module({})
 export class MixedDogModule {
