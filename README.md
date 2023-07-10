@@ -194,7 +194,7 @@ export class MixedDogController {
 
 ```
 
-- forRoot()를 사용하여 DogService, MalteseService, BorderCollieService를 등록한 경우, 해당 서비스들은 MixedDogModule 내부에서만 사용 가능하다.
+- forRoot()를 사용하여 등록한 서비스들은 MixedDogModule 내부에서만 사용 가능하다.
 - 이 서비스들은 MixedDogModule 내부에서 자체적으로 관리가 된다.
   - 이 말은 각각 말티즈, 보더콜리 모듈을 믹스견 모듈에서 import하지 않아도 사용이 가능하게 됨을 의미한다.
 - 추가로, forRoot() 메서드를 사용하는 MixedDogModule 모듈은 싱글톤으로 관리되며, 모듈 내에 주입받은 프로바이더들은(서비스, 컨트롤러 등) 모듈 전체에서 공유된다.
