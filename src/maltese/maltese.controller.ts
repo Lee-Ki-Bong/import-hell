@@ -14,8 +14,8 @@ export class MalteseController {
     return this.dogService.bark();
   }
 
-  @Get('shoingBelly')
-  shoingBelly() {
-    return this.malteseService.shoingBelly();
+  @Get('showingBelly')
+  showingBelly() {
+    return this.malteseService.showingBelly();
   }
 }

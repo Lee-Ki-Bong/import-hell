@@ -6,7 +6,7 @@ import { Injectable } from '@nestjs/common';
  */
 @Injectable()
 export class MalteseService {
-  shoingBelly() {
+  showingBelly() {
     return '배 보여주기';
   }
 }
